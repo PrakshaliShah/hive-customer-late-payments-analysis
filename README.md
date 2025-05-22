@@ -50,4 +50,10 @@ Using Hive and HDFS, we built an analytical workflow that:
 
 ## 📂 Sample Data
 
-### `CustomerDetails.txt`
+### 🔸 [CustomerDetails.txt](./CustomerDetails.txt)
+Contains customer profile data including demographics, banking preferences, and credit usage.
+
+### 🔸 [LatePayments.txt](./LatePayments.txt)
+Contains transaction IDs, dates, and whether each customer made a late payment.
+
+
