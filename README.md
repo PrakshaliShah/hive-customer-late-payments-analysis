@@ -48,12 +48,35 @@ Using Hive and HDFS, we built an analytical workflow that:
 
 ---
 
-## 📂 Sample Data
+## 📄 Sample Input
 
-### 🔸 [CustomerDetails.txt](./CustomerDetails.txt)
+### 🔸 [CustomerDetails](./CustomerDetails.txt)
 Contains customer profile data including demographics, banking preferences, and credit usage.
 
-### 🔸 [LatePayments.txt](./LatePayments.txt)
-Contains transaction IDs, dates, and whether each customer made a late payment.
+
+---
+
+## 🖥️ Sample Output
+
++-------------+-------------+-------------+--------------+
+| CustomerID | City | CreditCard | LatePayment |
++-------------+-------------+-------------+--------------+
+| 181 | Phoenix | FALSE | TRUE |
+| 190 | Dallas | FALSE | TRUE |
+| 192 | Boston | FALSE | TRUE |
++-------------+-------------+-------------+--------------+
+
+
+*(Result from a join query where CreditCard = FALSE and LatePayment = TRUE)*
+
+---
+
+## 🖼️ Preview
+
+![Hive Output Preview](hive-query-screenshot.png)
+
+> Hive terminal output after executing queries from `customer_analysis_queries.hql`
+
+---
 
 
